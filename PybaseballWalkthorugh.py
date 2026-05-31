@@ -22,8 +22,4 @@ print(batting[["Name","Season","WAR","NextWar"]])
 
 null_count = batting.isnull().sum()
 
-from pybaseball import schedule_and_record
-data = schedule_and_record(1927, 'NYY')
-data.loc[data.Date.str.contains("May 16"), :]
-print(data)
 
